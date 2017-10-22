@@ -93,6 +93,19 @@ FlowRouter.route('/contracts', {
 });
 
 
+FlowRouter.route('/exchange', {
+    name: 'exchange',
+    action: function(params, queryParams) {
+        BlazeLayout.render('layout_main', {
+            header: 'layout_header',
+            main: 'views_exhchange'
+        });
+    }
+});
+
+
+
+
 
 /**
 The send route.
@@ -190,4 +203,3 @@ FlowRouter.route('/account/:address', {
         });
     }
 });
-
