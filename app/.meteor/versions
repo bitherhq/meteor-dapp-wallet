@@ -10,7 +10,9 @@ babel-compiler@6.6.4
 babel-runtime@0.1.8
 base64@1.0.8
 binary-heap@1.0.8
-bither:web3@0.20.2
+bither:elements@0.7.17
+bither:tools@0.7.0
+bither:web3@0.15.3
 blaze@2.1.7
 blaze-html-templates@1.0.4
 blaze-tools@1.0.8
@@ -35,8 +37,6 @@ ejson@1.0.11
 ethereum:accounts@0.4.0
 ethereum:blocks@0.3.2
 ethereum:dapp-styles@0.5.7
-ethereum:elements@0.7.17
-ethereum:tools@0.7.0
 ethereum:web3@0.15.3
 fastclick@1.0.11
 frozeman:animation-helper@0.2.6
