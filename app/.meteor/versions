@@ -34,7 +34,7 @@ diff-sequence@1.0.5
 ecmascript@0.4.3
 ecmascript-runtime@0.2.10
 ejson@1.0.11
-ethereum:accounts@0.4.0
+bither:accounts@0.4.0
 ethereum:blocks@0.3.2
 ethereum:dapp-styles@0.5.7
 ethereum:web3@0.15.3
