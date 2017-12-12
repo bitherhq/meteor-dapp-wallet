@@ -93,12 +93,12 @@ FlowRouter.route('/contracts', {
 });
 
 
-FlowRouter.route('/exchange', {
-    name: 'exchange',
+FlowRouter.route('/reward', {
+    name: 'reward',
     action: function(params, queryParams) {
         BlazeLayout.render('layout_main', {
             header: 'layout_header',
-            main: 'views_exhchange'
+            main: 'views_reward'
         });
     }
 });
