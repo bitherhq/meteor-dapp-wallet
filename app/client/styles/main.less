@@ -13,21 +13,21 @@
 
 // Change Default constants
 
-@colorLink: #4584e1;
+@colorLink: #1c39bb;
 
 @heightHeader: @gridWidth * 2.5;
 
 
 // Platform specifics
 // Mac OSX
-@colorOSBackgroundFocus: #d5edff;
-@colorOSBackgroundBlur: lighten(@colorOSBackgroundFocus, 10%);
+@colorOSBackgroundFocus: #f4f4f4;
+@colorOSBackgroundBlur: lighten(@colorOSBackgroundFocus, 50%);
 
-@colorWinBackgroundFocus: #d5edff;
-@colorWinBackgroundBlur: #d5edff;
+@colorWinBackgroundFocus: #f4f4f4;
+@colorWinBackgroundBlur: #f4f4f4;
 
-@colorLinuxBackgroundFocus: #0002bf;
-@colorLinuxBackgroundBlur: #0002bf;
+@colorLinuxBackgroundFocus: #001442;
+@colorLinuxBackgroundBlur: #001442;
 
 
 .global-notifications {
@@ -157,7 +157,7 @@ body {
     padding-left: @gridWidth * 2.5;
     background-color: @colorWinBackgroundFocus;
     -webkit-app-region: drag; // necessary to drag the wallet window
-    .background-image(linear-gradient(to bottom,  @colorWinBackgroundFocus 50%, #ddd9d9 90%));
+    .background-image(linear-gradient(to bottom,  @colorWinBackgroundFocus 0%, #f4f4f4 100%));
 
     &.dapp-small {
         z-index: 30;
@@ -201,7 +201,7 @@ body {
     .block-info {
         padding-bottom: @defaultPaddingVertical;
         color: lighten(@colorGrayDark, 5%);
-        text-align: center;
+        text-align: left;
         flex: 1 0;
 
         &.syncing {
@@ -239,7 +239,7 @@ body {
 
         span.account-balance {
             color: @colorTextSecondary;
-            font-size: 1.6em;
+            font-size: 2em;
 
             .inline-form {
                 > .simple-modal {

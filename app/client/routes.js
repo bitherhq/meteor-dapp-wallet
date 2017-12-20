@@ -36,6 +36,21 @@ The receive route, showing the wallet overview
 @method dashboard
 */
 FlowRouter.route('/', {
+    name: 'menu',
+    action: function(params, queryParams) {
+        BlazeLayout.render('layout_main', {
+            header: 'layout_header',
+            main: 'views_menu'
+        });
+    }
+});
+
+
+/**
+
+@method dashboard
+*/
+FlowRouter.route('/dashboard', {
     name: 'dashboard',
     action: function(params, queryParams) {
         BlazeLayout.render('layout_main', {
@@ -45,10 +60,7 @@ FlowRouter.route('/', {
     }
 });
 
-
 /**
-The send route.
-
 @method send
 */
 FlowRouter.route('/send', {

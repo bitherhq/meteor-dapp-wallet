@@ -1,0 +1,48 @@
+<template name="views_menu">
+    <div class="dapp-container">
+        <main class="dapp-content">
+                <div class="row clear" style="text-align: center;">
+                    <div class="col col-3 mobile-full">
+                        <a href="{{pathFor route='dashboard'}}" class="{{isActiveRoute regex='dashboard'}}">
+                            <button>
+                                <i class="icon-wallet" style="font-size: 7rem;"></i>
+                                <h1>Dashboard</h1>
+                                <h3>Divan wallet page</h3>
+                            </button>
+                        </a>
+                    </div>
+
+                    <div class="col col-3 mobile-full">
+                            <a href="{{pathFor route='send'}}" class="{{isActiveRoute regex='send'}}">
+                                <button>
+                                    <i class="icon-arrow-up" style="font-size: 7rem;"></i>
+                                    <h1>Send</h1>
+                                    <h3>Send BTR and tokens to others</h3>
+                                </button>
+                            </a>
+                        </div>
+    
+                    <div class="col col-3 mobile-full">
+                        <a href="{{pathFor route='contracts'}}" class="{{isActiveRoute regex='contracts'}}">
+                            <button>
+                                <i class="icon-docs" style="font-size: 7rem;"></i>
+                                <h1>Contracts</h1>
+                                <h3>Bither contracts page</h3>
+                            </button>
+                        </a>
+                    </div>
+    
+                    <div class="col col-3 mobile-full">
+                        <a href="{{pathFor route='reward'}}" class="{{isActiveRoute regex='reward'}}">
+                            <button>
+                                <i class="icon-trophy" style="font-size: 7rem;"></i>
+                                <h1>BCR</h1>
+                                <h3>BCR page</h3>
+                            </button>
+                        </a>
+                    </div>
+                    <div class="dapp-clear-fix"></div>
+                </div>
+            </main>
+    </div>
+</template>
